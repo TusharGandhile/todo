@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>TO-Do list</title>
+<link rel="stylesheet" href="todo.css">
+<style type="text/css"> 
+
+#itemlist{
+	margin-left: 30%;
+	
+}
+.container{
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 20px;
+}
+
+</style>
+</head>
+<body>
+	<div class="container">
+	<h1>To-Do List</h1>
+	<input type="text" id="textInput" class="input" onfocus="this.value=''" placeholder="Add an item">
+	
+	<button id="saveBtn" onclick="saveItem()">SAVE</button>
+
+	<button id="clearBtn" onclick="clearList()">CLEAR</button>
+	</div>
+	<div class="list">
+	 <ol id="itemlist"></ol>
+	</div>
+	 <script src="todo.js"></script>
+</body>
+</html>
